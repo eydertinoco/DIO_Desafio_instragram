@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  justify-content: center;
+  width: 100%;
+}
+@media (max-width: 640.98px) {
+  body {
+    background-color: white;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024.98px) {
+  body {
+    background-color: #f3f3f3;
+  }
+}
+@media (min-width: 1025px) {
+  body {
+    background-color: #f3f3f3;
+  }
+}
+
+.panel {
+  display: flex;
+  height: 100vh;
+  justify-content: start;
+}
+@media (max-width: 640.98px) {
+  .panel {
+    align-items: baseline;
+    width: 90%;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024.98px) {
+  .panel {
+    align-items: center;
+    width: 90%;
+  }
+}
+@media (min-width: 1025px) {
+  .panel {
+    align-items: center;
+    width: 60%;
+  }
+}
+.panel__img {
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+@media (max-width: 640.98px) {
+  .panel__img {
+    display: none;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024.98px) {
+  .panel__img {
+    display: flex;
+  }
+}
+@media (min-width: 1025px) {
+  .panel__img {
+    display: flex;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024.98px) {
+  .panel__img img {
+    height: 50vh;
+  }
+}
+@media (min-width: 1025px) {
+  .panel__img img {
+    height: 70vh;
+  }
+}
+.panel__login {
+  align-items: center;
+  /* horizontal */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* vertical */
+  min-height: 34rem;
+}
+@media (max-width: 640.98px) {
+  .panel__login {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024.98px) {
+  .panel__login {
+    width: 50%;
+  }
+}
+@media (min-width: 1025px) {
+  .panel__login {
+    width: 50%;
+  }
+}
+.panel__login__conteiner {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.3rem 0;
+  width: 100%;
+}
+@media (max-width: 640.98px) {
+  .panel__login__conteiner {
+    border: 1px solid transparent;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024.98px) {
+  .panel__login__conteiner {
+    border: 1px solid lightgray;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1025px) {
+  .panel__login__conteiner {
+    border: 1px solid lightgray;
+  }
+}
+.panel__login__conteiner:nth-child(1) {
+  min-height: 19rem;
+}
+.panel__login__conteiner .logo {
+  height: 3rem;
+}
+.panel__login__conteiner .avatarPhoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.panel__login__conteiner .avatarPhoto img {
+  height: 6rem;
+}
+.panel__login__conteiner .btnLogin {
+  background-color: #0095f6;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+}
+.panel__login__conteiner .logout {
+  color: #0095f6;
+  margin-top: 1rem;
+}
+.panel__getApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+.panel__getApp__download {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+@media (max-width: 640.98px) {
+  .panel__getApp__download {
+    flex-direction: column;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024.98px) {
+  .panel__getApp__download {
+    flex-direction: column;
+  }
+}
+.panel__getApp__download__app {
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+@media (max-width: 640.98px) {
+  .panel__getApp__download__app {
+    margin: 5px 0;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024.98px) {
+  .panel__getApp__download__app {
+    margin: 5px 0;
+  }
+}
+.panel__getApp__download__app:nth-child(1) {
+  background-image: url("img/apple-button.png");
+}
+.panel__getApp__download__app:nth-child(2) {
+  background-image: url("img/googleplay-button.png");
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  height: auto;
+  margin-bottom: 30px;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer ul {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+footer ul li {
+  margin: 3px 5px;
+  color: #8e8e8e;
+}
+footer .direitos {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 12px 0;
+  width: 300px;
+}
+footer .direitos p {
+  color: #8e8e8e;
+  text-align: center;
+}
+
+.not-account {
+  color: #a0a0a0;
+}
+
+.link-blue {
+  color: #0095f6;
+}
+
+/* media queries */
+@media (max-width: 1024px) {
+  .instagram-wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 650px) {
+  .instagram-wrapper {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
